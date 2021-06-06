@@ -1,0 +1,14 @@
+h1{
+    color: white;
+}
+h2{
+    margin-top: 50px;
+    color: white;
+}
+.review_text{
+    color: white;
+}
+#movies_hd {
+    display: inline-block;
+}
+
