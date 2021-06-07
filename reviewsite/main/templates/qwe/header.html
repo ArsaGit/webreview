@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block header %}
+<header>
+        <nav>
+            <div class="container">
+                <ul class="menu">
+                    <li class="menu_item"><a href="index.html" class="menu_link">Главная</a></li>
+                    <li class="menu_item"><a href="Movies.html" class="menu_link">Фильмы</a></li>
+                    <li class="menu_item"><a href="games.html" class="menu_link">Игры</a></li>
+                    <li class="menu_item"><a href="criticism.html" class="menu_link">Критика</a></li>
+                    <li class="menu_item"><a href="login.html" class="menu_link">Вход в личный кабинет</a></li>
+                    <li class="menu_item"><a href="Set Up.html" class="menu_link">Зарегистрироваться</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+</header>
+{% endblock %}
+
+{% if user.is_authentificated %}
+user_name
+button выход
+

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Регистрация</title>
-	<link rel="stylesheet" href="{% static 'css/login.css">
+	<link rel="stylesheet" href="{% static 'css/login.css' %}">
 </head>
 <body>
 	
@@ -21,7 +21,7 @@
 		<div class="input-form">
 			<input type="submit" value="Зарегистрироваться">
 		</div>
-		<a href="login.html" class="forget">У вас уже есть аккаунт? Войти</a>
+		<a href="{% url 'login' %}" class="forget">У вас уже есть аккаунт? Войти</a>
 	</div>
 
 </body>

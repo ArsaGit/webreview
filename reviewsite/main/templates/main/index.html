@@ -18,12 +18,12 @@
         <nav>
             <div class="container">
                 <ul class="menu">
-                    <li class="menu_item"><a href="index.html" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="Movies.html" class="menu_link">Фильмы</a></li>
+                    <li class="menu_item"><a href="{% url 'home' %}" class="menu_link">Главная</a></li>
+                    <li class="menu_item"><a href="{% url 'movies' %}" class="menu_link">Фильмы</a></li>
                     <li class="menu_item"><a href="games.html" class="menu_link">Игры</a></li>
                     <li class="menu_item"><a href="criticism.html" class="menu_link">Критика</a></li>
-                    <li class="menu_item"><a href="login.html" class="menu_link">Вход в личный кабинет</a></li>
-                    <li class="menu_item"><a href="Set Up.html" class="menu_link">Зарегистрироваться</a></li>
+                    <li class="menu_item"><a href="{% url 'login' %}" class="menu_link">Вход в личный кабинет</a></li>
+                    <li class="menu_item"><a href="{% url 'set up' %}" class="menu_link">Зарегистрироваться</a></li>
                 </ul>
             </div>
             <div class="hamburger">
@@ -44,7 +44,7 @@
                         <br><br>
                        Широкий подбор различных мнений о последних новинках и объективные оценки. Пользовательские рейтинги, голосование и лучшие авторы – всё это на нашем сайте.
                     </div>
-                    <form action="Set Up.html">
+                    <form action="{% url 'set up' %}">
                         <button class="promo_btn">Зарегистрироваться!</button>
                     </form>
                 </div>

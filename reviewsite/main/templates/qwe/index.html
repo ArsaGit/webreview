@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сайт-агрегатор рецензий</title>
+    <link rel="shortcut icon" href="{% static 'icons/favicon.ico" type="image/x-icon' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% block header %}{% endblock %}
+
+    <section class="promo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
+                    <h1 class="promo_header">Сайт-агрегатор рецензий!</h1>
+                    <h2 class="promo_subheader">самая большая база рецензий на фильмы и игры</h2>
+                    <div class="promo_descr">
+                        <br><br>
+                       Широкий подбор различных мнений о последних новинках и объективные оценки. Пользовательские рейтинги, голосование и лучшие авторы – всё это на нашем сайте.
+                    </div>
+                    <form action="Set Up.html">
+                        <button class="promo_btn">Зарегистрироваться!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_divider"></div>
+        <div class="footer_wrapper">
+            <div>
+                <div class="footer_social">
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="footer_social_item">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="footer_links">
+                    <div class="footer_links_main">
+                        <a href="#">на главную</a>
+                        <a href="#">города</a>
+                        <a href="#">для рекламодателей</a>
+                    </div>
+                    <div class="footer_links_sub">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                    <a href="#" class="footer_links_lang">Русский</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer_mobile">
+                    <a href="#">
+                        <img src="{% static 'img/app_store.png' %}" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="{% static 'img/google_play.png' %}" alt="Google play">
+                    </a>
+                    <a href="#">
+                        <img src="{% static 'img/windows_store.png' %}" alt="Windows store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
