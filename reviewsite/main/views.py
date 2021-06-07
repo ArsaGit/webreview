@@ -13,3 +13,19 @@ class MovieView(View):
 
 def index(request):
     return render(request, 'main/index.html')
+
+
+def login(request):
+    return render(request, 'main/login.html')
+
+
+def authorization(request):
+    return render(request, 'main/Set Up.html')
+
+
+def movies(request):
+    return render(request, 'main/Movies.html')
+
+
+def movie_example(request):
+    return render(request, 'main/The Woman in the Window.html')
